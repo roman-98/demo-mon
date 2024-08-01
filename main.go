@@ -6,7 +6,7 @@ import (
 )
 
 func versionHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Version: 1.0.0")
+	fmt.Fprintln(w, "Version: 2.0.0")
 }
 
 func main() {

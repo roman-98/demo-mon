@@ -7,7 +7,7 @@ RUN go mod download
 
 COPY . .
 RUN go build -o main .
-FROM alpine:latest  
+FROM busybox:latest  
 COPY --from=builder /app/main .
 
 EXPOSE 8080
